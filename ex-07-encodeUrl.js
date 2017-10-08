@@ -20,6 +20,20 @@
 *
 **/
 
+function encodeUrl(stringInput)
+  var replaces = [
+    {kay: ' ', replace: '%21'},
+    {kay: '""', replace: '%22'},
+    {kay: '$', replace: '%24'},
+    {kay: '%', replace: '%25'},
+    {kay: "'", replace: '%27'}
+  ]
+  for (i = 0; i < replaces.length; i++) {
+    stringInput = stringInput.replace(replaces[i].key, replaces[i].replace)
+  }
+  return stringInput;
+}
+
 
 
 

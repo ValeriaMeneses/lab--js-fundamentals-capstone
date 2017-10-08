@@ -7,6 +7,24 @@
   *
   *
  **/
+function where(arrayInput, value) {
+  var newArray = [];
+
+  for (var i = 0; i < arrayInput.length; i++) {
+      var object = arrayInput[i]
+
+      for (var properties in value) {
+        if (value[properties] === object[properties]) {
+          console.log(true);
+          newArray.push(object)
+
+        }
+
+
+      }
+  }
+  return newArray
+}
 
 
 

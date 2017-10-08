@@ -5,7 +5,17 @@
  * an array of all of the capital letters of a string
  *
 **/
-
+function getCapitalLetters(stringInput){
+  var arrayLetters = [];
+  for (var i = 0; i < stringInput.length; i++) {
+    var mayus = stringInput[i]
+    if (mayus === mayus.toUpperCase()  && mayus !== " ") {
+      arrayLetters.push(mayus)
+    }
+  }
+console.log(arrayLetters);
+  return arrayLetters
+}
 
 
 

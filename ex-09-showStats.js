@@ -17,11 +17,30 @@
  *   }
 **/
 
+function showStats(number, array) {
+  var object = {
+    count_inputEqualTo: 0,
+    count_inputGreaterThan: 0,
+    count_inputLessThan: 0,
+    inputArraySize: array.length
+  }
 
+  for (var i = 0; i < array.length; i++) {
+    var numSolo = array[i];
+    if (number === numSolo) {
+      object.count_inputEqualTo++
+    }else if (number > numSolo) {
+      object.count_inputGreaterThan ++
 
+    }else if (number < numSolo) {
+      object.count_inputLessThan++
+    }
+  }
 
+  // console.log(object);
+  return object
 
-
+}
 
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

@@ -8,7 +8,22 @@
  *
 **/
 
+function getWordCount(stringInput){
+  var arrayOfString = stringInput.toLowerCase().split(' ')
+  // console.log(arrayOfString);
+  var object = {}
 
+  for (var i = 0; i < arrayOfString.length; i++) {
+  var string = arrayOfString[i].replace(/\W+/g, '')//remplaza todos los caracteres
+    if (string in object) {
+      object[string]++
+    }else {
+      object[string] = 1
+    }
+  }
+  // console.log(object);
+  return object
+}
 
 
 

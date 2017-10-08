@@ -9,11 +9,13 @@
  *
 **/
 
+function merge(objectUno, objectDos){
+  var newObject = {}
+  newObject = Object.assign({}, objectUno, objectDos); //
+  console.log(newObject);
+  return newObject
 
-
-
-
-
+}
 
 
 

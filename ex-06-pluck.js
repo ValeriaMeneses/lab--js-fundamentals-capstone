@@ -8,7 +8,18 @@
  * pluck(stooges, 'name') should yield the array, ['moe','larry','curly']
  *
 **/
+function pluck(listOfObjects, propiedad){
+  var arrayOfproperty = []
+  for (var i = 0; i < listOfObjects.length; i++) {
+    var objec = listOfObjects[i]
+    // console.log(objec);
+    arrayOfproperty.push(objec[propiedad])
 
+  }
+  // console.log(arrayOfproperty);
+  return arrayOfproperty
+
+}
 
 //*~*~*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
